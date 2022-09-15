@@ -4,11 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/style.css"/>
-    <title>Exclusivagora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+<link rel="stylesheet" href="./scss/style.css"/>
+<title>Exclusivagora</title>
 </head>
 <body>
-    
+    <div class="container-xxl">
+        <header>
+            <figure class="logo">
+                <img src="./img/logo.png" alt="Exclusivagora">
+            </figure>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Vendas</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Contactos</a>
+                    </li>
+                    <li class="pipe">
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+
+                <select class="form-select lang-select">
+                    <option value="pt">PT</option>
+                    <option value="en">EN</option>
+                </select>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="big-box col-md-6">
+                    <h1><span class="text-light">O melhor negócio</span><br/><strong>é o que ainda está para vir!</strong></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer dipiscing elit, sed diam nonummy nibh...</p>
+                </div>
+                <div class="small-boxes col-md-6">
+                    <div class="small-box">
+                        <figure>
+                            <img src="./img/Caminhões.jpg" alt="caminhões">
+                        </figure>
+                        <div class="content">
+                            <small>Leilão eletrônico</small>
+                            <h2>Semirreboques de carga de 3 eixos</h2>
+                            <p class="highlight">Rebordões - Santo Tirso</p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer dipiscing elit, sed diam nonummy nibh...</p>
+                            <div class="footer">
+                                <button>Saber mais</button>
+                                <div class="navigation">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-box">
+                        <div class="content">
+                            <small>Leilão eletrônico</small>
+                            <h2>Lote global</h2>
+                            <p class="highlight">Rebordões - Santo Tirso</p>
+                            <p>Lorem ipsum dolor sit amet, consectetuer dipiscing elit, sed diam nonummy nibh...</p>
+                            <div class="footer">
+                                <button>Saber mais</button>
+                                <div class="navigation">
+                                    <i class="bi bi-chevron-left"></i>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <figure>
+                            <img src="./img/galpao.jpg" alt="galpão">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

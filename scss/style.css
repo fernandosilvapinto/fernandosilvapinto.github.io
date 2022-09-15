@@ -1,3 +1,150 @@
+.text-light {
+  color: #202020;
+  font-weight: 300;
+}
+
 body {
   background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 300px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+}
+header .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+header .menu ul li {
+  margin-right: 16px;
+}
+header .menu ul li a {
+  color: #202020;
+  text-decoration: none;
+  transition: 0.2s;
+}
+header .menu ul li a:hover {
+  color: #ff454f;
+  transition: 0.2s;
+}
+header .menu ul li.pipe a {
+  font-weight: bold;
+}
+header .menu ul li.pipe:before {
+  content: "|";
+  margin-right: 12px;
+}
+header .menu .lang-select {
+  border: 0;
+  color: #ff454f;
+  width: 50px;
+  padding-right: 0.75rem;
+  background-image: url("./../img/dropdown.svg");
+  background-position: 100% 54%;
+}
+header .menu .lang-select option {
+  color: #202020;
+}
+
+section.hero {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+}
+section.hero .big-box {
+  background: url("./../img/martelo.jpg") center/cover no-repeat;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  padding: 22px 40px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+section.hero .big-box:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 20%, rgba(0, 0, 0, 0.6) 100%);
+}
+section.hero .big-box h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+section.hero .big-box span,
+section.hero .big-box strong,
+section.hero .big-box p {
+  color: #fff !important;
+}
+section.hero .big-box h1,
+section.hero .big-box p {
+  position: relative;
+  z-index: 1;
+}
+section.hero .big-box p {
+  margin: 0;
+}
+section.hero .small-boxes {
+  height: 100%;
+}
+section.hero .small-box {
+  background-color: #282a3b;
+  border-radius: 20px;
+  display: flex;
+  height: 50%;
+}
+section.hero .small-box figure {
+  height: 100%;
+  width: 45%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+section.hero .small-box figure img {
+  height: 100%;
+}
+section.hero .small-box .content {
+  color: #fff;
+  padding: 22px;
+}
+section.hero .small-box .content small,
+section.hero .small-box .content h2,
+section.hero .small-box .content .highlight {
+  text-transform: uppercase;
+}
+section.hero .small-box .content small {
+  font-size: 0.7rem;
+}
+section.hero .small-box .content h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+section.hero .small-box .content .highlight {
+  color: #ff454f;
+  font-weight: 600;
+}
+section.hero .small-box .content p {
+  font-size: 0.8rem;
+  margin: 12px 0;
+}
+section.hero .small-box .content .footer {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
