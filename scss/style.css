@@ -142,7 +142,7 @@ section.hero .small-box:last-child {
 }
 section.hero .small-box figure {
   height: 100%;
-  width: 45%;
+  width: 50%;
   overflow: hidden;
   text-align: center;
   border-radius: 20px;
@@ -174,7 +174,7 @@ section.hero .small-box .content .highlight {
   font-weight: 600;
 }
 section.hero .small-box .content p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin: 6px 0;
 }
 section.hero .small-box .content .footer {
@@ -187,4 +187,17 @@ section.hero .small-box .content .footer .btn {
   text-transform: uppercase;
   font-size: 0.9rem;
   padding: 10px 40px;
+}
+section.hero .small-box .content .footer .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.hero .small-box .content .footer .navigation span {
+  position: relative;
+  top: -1px;
+  font-size: 1.4rem;
+  opacity: 0.15;
+  display: inline-block;
+  margin: 0 6px;
 }/*# sourceMappingURL=style.css.map */

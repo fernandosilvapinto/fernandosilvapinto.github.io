@@ -169,7 +169,7 @@ section.hero {
 
         figure {
             height: 100%;
-            width: 45%;
+            width: 50%;
             overflow: hidden;
             text-align: center;
             border-radius: 20px;
@@ -207,7 +207,7 @@ section.hero {
             }
 
             p {
-                font-size: .9rem;
+                font-size: .7rem;
                 margin: 6px 0;
             }
 
@@ -221,6 +221,21 @@ section.hero {
                     text-transform: uppercase;
                     font-size: .9rem;
                     padding: 10px 40px;
+                }
+
+                .navigation {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        position: relative;
+                        top: -1px;
+                        font-size: 1.4rem;
+                        opacity: .15;
+                        display: inline-block;
+                        margin: 0 6px;
+                    }
                 }
             }
         }
