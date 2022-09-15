@@ -3,18 +3,35 @@
   font-weight: 300;
 }
 
+.btn {
+  border-radius: 50px;
+}
+.btn.btn-primary {
+  background-color: #ff454f;
+  border-color: #ff454f;
+}
+.btn.btn-primary:hover {
+  background-color: #ff3641;
+}
+
+html,
 body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
+  font-size: 13px !important;
+}
+
+.container-xxl {
+  padding: 0 112px;
 }
 
 header {
-  padding: 36px;
+  padding: 36px 0;
   display: flex;
   justify-content: space-between;
 }
 header .logo img {
-  width: 300px;
+  width: 305px;
 }
 header .menu {
   display: flex;
@@ -33,6 +50,7 @@ header .menu ul li a {
   color: #202020;
   text-decoration: none;
   transition: 0.2s;
+  font-weight: 500;
 }
 header .menu ul li a:hover {
   color: #ff454f;
@@ -49,7 +67,7 @@ header .menu .lang-select {
   border: 0;
   color: #ff454f;
   width: 50px;
-  padding-right: 0.75rem;
+  padding-right: 0.95rem;
   background-image: url("./../img/dropdown.svg");
   background-position: 100% 54%;
 }
@@ -60,19 +78,21 @@ header .menu .lang-select option {
 section.hero {
   display: flex;
   justify-content: space-between;
-  height: 80vh;
+  height: 68vh;
 }
 section.hero .big-box {
   background: url("./../img/martelo.jpg") center/cover no-repeat;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  padding: 22px 40px;
+  padding: 40px;
+  margin-right: 12px;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: flex-start;
+  min-height: 410px;
 }
 section.hero .big-box:before {
   content: "";
@@ -82,11 +102,11 @@ section.hero .big-box:before {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 20%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.8) 100%);
 }
 section.hero .big-box h1 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 section.hero .big-box span,
 section.hero .big-box strong,
@@ -100,6 +120,7 @@ section.hero .big-box p {
 }
 section.hero .big-box p {
   margin: 0;
+  font-size: 1rem;
 }
 section.hero .small-boxes {
   height: 100%;
@@ -108,7 +129,16 @@ section.hero .small-box {
   background-color: #282a3b;
   border-radius: 20px;
   display: flex;
-  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(50% - 6px);
+  min-height: 240px;
+}
+section.hero .small-box:first-child {
+  margin-bottom: 12px;
+}
+section.hero .small-box:last-child {
+  margin-top: 12px;
 }
 section.hero .small-box figure {
   height: 100%;
@@ -117,6 +147,8 @@ section.hero .small-box figure {
   text-align: center;
   border-radius: 20px;
   flex-shrink: 0;
+  margin: 0;
+  padding: 0;
 }
 section.hero .small-box figure img {
   height: 100%;
@@ -131,20 +163,28 @@ section.hero .small-box .content .highlight {
   text-transform: uppercase;
 }
 section.hero .small-box .content small {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 section.hero .small-box .content h2 {
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 section.hero .small-box .content .highlight {
   color: #ff454f;
   font-weight: 600;
 }
 section.hero .small-box .content p {
-  font-size: 0.8rem;
-  margin: 12px 0;
+  font-size: 0.9rem;
+  margin: 6px 0;
 }
 section.hero .small-box .content .footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+section.hero .small-box .content .footer .btn {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 10px 40px;
 }/*# sourceMappingURL=style.css.map */

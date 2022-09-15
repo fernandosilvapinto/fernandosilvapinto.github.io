@@ -6,18 +6,38 @@ $primary: #ff454f;
     font-weight: 300;
 }
 
+.btn {
+    border-radius: 50px;
+
+    &.btn-primary {
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover {
+            background-color: darken($primary, 3);
+        }
+    }
+}
+
+html,
 body {
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
+    font-size: 13px !important;
+}
+
+.container-xxl {
+    padding: 0 112px;    
 }
 
 header {
-    padding: 36px;
+    padding: 36px 0;
     display: flex;
     justify-content: space-between;
 
+
     .logo img {
-        width: 300px;
+        width: 305px;
     }
 
     .menu {
@@ -37,6 +57,7 @@ header {
                     color: $textColor;
                     text-decoration: none;
                     transition: .2s;
+                    font-weight: 500;
 
                     &:hover {
                         color: $primary;
@@ -61,7 +82,7 @@ header {
             border: 0;
             color: $primary;
             width: 50px;
-            padding-right: .75rem;
+            padding-right: .95rem;
             background-image: url('./../img/dropdown.svg');
             background-position: 100% 54%;
 
@@ -75,19 +96,21 @@ header {
 section.hero {
     display: flex;
     justify-content: space-between;
-    height: 80vh;
+    height: 68vh;
 
     .big-box {
         background: url('./../img/martelo.jpg') center/cover no-repeat;
         border-radius: 20px;
         position: relative;
         overflow: hidden;
-        padding: 22px 40px;
+        padding: 40px;
+        margin-right: 12px;
         height: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
         align-items: flex-start;
+        min-height: 410px;
 
         &:before {
             content: '';
@@ -97,12 +120,12 @@ section.hero {
             right: 0;
             top: 0;
             bottom: 0;
-            background: linear-gradient(180deg, rgba(2,0,36,0) 20%, rgba(0,0,0,.6) 100%);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,.8) 100%);
         }
 
         h1 {
             text-transform: uppercase;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         span,
@@ -119,6 +142,7 @@ section.hero {
 
         p {
             margin: 0;
+            font-size: 1rem;
         }
     }
 
@@ -130,7 +154,18 @@ section.hero {
         background-color: #282a3b;
         border-radius: 20px;
         display: flex;
-        height: 50%;
+        align-items: center;
+        justify-content: space-between;
+        height: calc(50% - 6px);
+        min-height: 240px;
+
+        &:first-child {
+            margin-bottom: 12px;
+        }
+
+        &:last-child {
+            margin-top: 12px;
+        }
 
         figure {
             height: 100%;
@@ -139,6 +174,8 @@ section.hero {
             text-align: center;
             border-radius: 20px;
             flex-shrink: 0;
+            margin: 0;
+            padding: 0;
 
             img {
                 height: 100%;
@@ -156,12 +193,12 @@ section.hero {
             }
 
             small {
-                font-size: .7rem;
+                font-size: .9rem;
             }
 
             h2 {
                 font-weight: 700;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
             }
 
             .highlight {
@@ -170,13 +207,21 @@ section.hero {
             }
 
             p {
-                font-size: .8rem;
-                margin: 12px 0;
+                font-size: .9rem;
+                margin: 6px 0;
             }
 
             .footer {
                 display: flex;
-                
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 18px;
+
+                .btn {
+                    text-transform: uppercase;
+                    font-size: .9rem;
+                    padding: 10px 40px;
+                }
             }
         }
     }
